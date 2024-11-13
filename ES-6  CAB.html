@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAB</title>
+</head>
+<body>
+
+    <p> Find the maximum number in Math using CAB methods</p>
+    <script>
+        //   call      //
+        let array = [1,2,3,4,5]
+        console.log(Math.max.call(...array));
+        console.log(Math.min.call(...array));   //explain me this mam
+        console.log(Math.max.call(null,...array));
+        
+        //   apply      //
+         let arr1= [1,2,3,4,5]
+         console.log(Math.max.apply(null,[...arr1]));
+         console.log(Math.max.apply(null,[...arr1,6,7,8,9]));
+
+
+        //      bind             //
+       let arr2 = [10,20,30,40,50]
+    //    console.log(Math.max.bind(null,...arr2));
+           console.log(Math.max.bind(...arr2));
+           
+        
+       
+         
+
+        
+    </script>
+</body>
+</html>
